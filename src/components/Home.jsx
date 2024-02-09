@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios";
+import { useNavigate } from 'react-router';
 const Home = () => {
     const[input,setInput]=new useState([
         {
@@ -27,6 +28,10 @@ const Home = () => {
             }
         )
     }
+    const navigate=useNavigate()
+    const viewpost=()=>{
+        navigate("/posts")
+    }
   return (
     <div>
       <div className="container">
@@ -47,6 +52,16 @@ const Home = () => {
                         <button className="btn btn-success" onClick={readValues}>POST</button>
                     </div>
                 </div>
+            </div>
+        </div>
+      </div>
+      <br></br>
+      <div className="container">
+        <div className="row g-3">
+            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label htmlFor="" className="form-label">View My Older Posts</label>
+                <br></br>
+                <button className="btn btn-success" onClick={viewpost}>View Post</button>
             </div>
         </div>
       </div>
