@@ -36,16 +36,7 @@ const NavBar = () => {
                   SignUp
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">
-                  Add Post
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">
-                  View Post
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>
