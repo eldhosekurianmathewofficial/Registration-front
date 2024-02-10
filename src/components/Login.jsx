@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
@@ -32,11 +32,16 @@ const Login = () => {
     
   return (
     <div>
+        <h4 style={{textAlign:'center'}}><u>LOGIN</u> </h4>
+        <br></br>
       <div className="container">
         <div className="row">
+            
+
             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <div className="row g-3">
+                <br></br>
                 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label htmlFor="" className="form-label">EmailID</label>
                     <input type="text" className="form-control" name='email' value={input.email} onChange={inputHandler}/>
@@ -50,6 +55,9 @@ const Login = () => {
                     <button className="btn btn-success" onClick={readvalues}>Login</button>
                 </div>
             </div>
+            <br></br>
+            <div style={{textAlign:"center"}}><Link to="/signup"> Click here to create a new account</Link></div>
+            
             </div>
         </div>
       </div>

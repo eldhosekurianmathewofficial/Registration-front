@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 const Signup = () => {
   const [input, setInput] = new useState([
     {
@@ -125,6 +126,7 @@ const Signup = () => {
                 </button>
               </div>
             </div>
+            <div style={{textAlign:"center"}}><Link to="/"> Back to login</Link></div>
           </div>
         </div>
       </div>

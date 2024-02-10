@@ -3,10 +3,10 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg " style={{backgroundColor:"aquamarine"}}>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Registration
+            Blog
           </a>
           <button
             class="navbar-toggler"
@@ -41,6 +41,8 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+      <br>
+      </br>
     </div>
   );
 };
