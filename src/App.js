@@ -14,10 +14,10 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<><NavBar/><Login/></>}/>
-        <Route path="/home" element={<><NavBar/><Home/></>}/>
-        <Route path="/signup" element={<><NavBar/><Signup/></>}/>
-        <Route path="/posts" element={<><NavBar/><Posts/></>}/>
+        <Route path="/" element={<><Login/></>}/>
+        <Route path="/home" element={<><Home/></>}/>
+        <Route path="/signup" element={<><Signup/></>}/>
+        <Route path="/posts" element={<><Posts/></>}/>
         
         
       </Routes>
